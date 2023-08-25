@@ -1,0 +1,47 @@
+<html>
+<body style="background-color: darksalmon;">
+    <div >
+        <h2>AirBnb Price Prediction</h2>
+        <form action="/price" method="POST" style="text-align: center;">
+            <label for="bathrooms">Number of Bathroom(s)</label>
+            <input id="bathrooms" name="bathrooms" type="number" step="1" >
+            <br>
+            <label for="bedrooms">Number of Bedroom(s)</label>
+            <input id="bedrooms" name="bedrooms" type="number" step="1">
+            <br>
+            <label for="room_type">Choose a Room Type:</label>
+            <select id="room_type" name="room_type" type="number">
+            <option value=0>Apartment</option>
+            <option value=1>Private Room</option>
+            <option value=2>Share Room</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div>
+        <h2>AirBnb Visualization Reports</h2>
+        <figure style="text-align: center;">
+            <img src="../static/price_distribution.png" alt="Boston AirBnb Price Distribution" >
+            <figcaption>
+                Figure 1 - AirBnb Price Distribution in Boston area. Blue dots represent the average price of that area
+            </figcaption> 
+        </figure>  
+        <figure style="text-align: center;">
+            <img src="../static/roomtype.png" alt="Room Type vs Price" >
+            <figcaption>
+                Figure 2 - Room Type vs. AirBnb price
+            </figcaption> 
+        </figure>   
+        <div style="display: inline-flex;">
+            <figure style="text-align: center;">
+                <img src="../static/line_price_trend.png" alt="Boston AirBnb Price Distribution" >
+            </figure>  
+            <figure style="text-align: center;">
+                <img src="../static/bar_line_trend.png" alt="Room Type vs Price" >
+            </figure>
+        </div>        
+    </div>
+</body>
+</html>
